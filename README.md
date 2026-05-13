@@ -15,13 +15,13 @@ A long-range water-pressure telemetry rig for outdoor irrigation: a battery-powe
 | Part | Notes |
 | --- | --- |
 | **RAK4631** WisBlock Core | nRF52840 MCU + SX1262 LoRa radio in one module |
-| **RAK13002** IO Adapter   | Breaks WB_IO1, I²C, GND, and 3V3 out to a screw terminal block |
+| **RAK19007** WisBlock Base | Carrier board for the RAK4631; sensor leads land on the header pins |
 | **RAK Solar Unify Enclosure** | Outdoor IP65 housing with integrated solar panel + LiPo + battery management |
 | **TE M32JM-000105-100PG** | 0–100 PSI gauge pressure transducer, M8-4 connector, I²C interface |
 | M8-4 to flying-leads cable | 4-conductor shielded; red=V+, black=GND, white=SCL, green=SDA |
 | 1/4″ NPT brass tee | Splices the transducer into the irrigation manifold downstream of the FEBCO backflow preventer |
 
-**Wiring** (sensor → RAK13002 terminals):
+**Wiring** (sensor → RAK19007 header pins):
 
 | M32JM | RAK pin | Notes |
 | --- | --- | --- |
