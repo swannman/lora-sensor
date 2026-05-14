@@ -19,7 +19,7 @@ A long-range water-pressure telemetry rig for outdoor irrigation: a battery-powe
 | **RAK Solar Unify Enclosure** | Outdoor IP65 housing with integrated solar panel + LiPo + battery management |
 | **TE M32JM-000105-100PG** | 0–100 PSI gauge pressure transducer, M8-4 connector, I²C interface |
 | M8-4 to flying-leads cable | 4-conductor shielded; red=V+, black=GND, white=SCL, green=SDA |
-| 1/4″ NPT brass tee | Splices the transducer into the irrigation manifold downstream of the FEBCO backflow preventer |
+| FEBCO PVB test-cock fitting | The transducer threads into the downstream test cock on top of the FEBCO PVB (the one on the irrigation side of the check valve), tapped open via the cock's small ball valve. No tee or pipe modification required — just PTFE tape on the sensor's NPT threads. |
 
 **Wiring** (sensor → RAK19007 header pins):
 
