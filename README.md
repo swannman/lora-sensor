@@ -115,7 +115,10 @@ Operational tuning (sample interval, heartbeat cadence, delta threshold, LoRa pa
 ## Repository layout
 
 ```
-shared/         packet.h — binary wire format used by both nodes
-sensor-node/    RAK4631 firmware (sampling, TX, battery management)
-receiver-node/  Heltec V4 firmware (RX, OLED, Grafana push)
+shared/             packet.h — binary wire format used by both nodes
+sensor-node/        RAK4631 firmware (sampling, TX, battery management)
+  docs/             vendor datasheets (M3200/M32JM transducer)
+receiver-node/      Heltec V4 firmware (RX, OLED, Grafana push)
 ```
+
+The `m3200.cpp` driver implements the bit-banged I²C protocol described in [§1.8 of the M3200 datasheet](sensor-node/docs/ENG_DS_M3200_A20.pdf), which forbids repeated-START.
